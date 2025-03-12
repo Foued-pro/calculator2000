@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bts.ciel.binding.HelloController">
+   <children>
+      <TextField fx:id="largeur" layoutX="135.0" layoutY="115.0" prefHeight="74.0" prefWidth="185.0" promptText="Largeur">
+         <font>
+            <Font size="31.0" />
+         </font></TextField>
+      <TextField fx:id="hauteur" layoutX="136.0" layoutY="251.0" prefHeight="74.0" prefWidth="185.0" promptText="Hauteur">
+         <font>
+            <Font size="31.0" />
+         </font></TextField>
+      <TextField fx:id="perimetre" layoutX="454.0" layoutY="265.0" prefHeight="60.0" prefWidth="157.0" promptText="Perimetre">
+         <font>
+            <Font size="27.0" />
+         </font></TextField>
+      <TextField fx:id="surface" layoutX="454.0" layoutY="129.0" prefHeight="60.0" prefWidth="157.0" promptText="Surface" style="-fx-background-color: aqua;">
+         <font>
+            <Font size="27.0" />
+         </font></TextField>
+      <Slider fx:id="slider_hauteur" layoutX="76.0" layoutY="115.0" orientation="VERTICAL" prefHeight="180.0" prefWidth="34.0" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="slider_largeur" layoutX="135.0" layoutY="34.0" prefHeight="14.0" prefWidth="185.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="462.0" layoutY="84.0" prefHeight="31.0" prefWidth="89.0" text="Surface">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="454.0" layoutY="205.0" prefHeight="32.0" prefWidth="114.0" text="Perimetre">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="71.0" prefHeight="31.0" prefWidth="89.0" text="Largeur">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="205.0" prefHeight="31.0" prefWidth="89.0" text="Hauteur">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="241.0" layoutY="351.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   </children>
+</Pane>
